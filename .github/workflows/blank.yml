@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh commands using password
-      uses: ssh/ssh-action@master
+      uses: action/ssh-action@master
       with:
         command: ls -ltr
         host: ${{ secrets.HOST }}
