@@ -10,6 +10,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v1
     - name: executing remote ssh commands using password
       uses: girigowda/ci-cd1@master
       with:
