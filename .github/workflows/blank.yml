@@ -14,7 +14,7 @@ jobs:
     - name: Execute SSH commmands on remote server
       uses: girigowda/ci-cd1@master
       with:
-        hosts: 'ubuntu@13.232.240.3'
+        hosts: 'ubuntu@10.0.0.4'
         privateKey: ${{ secrets.KEY }}
         debug: false
         command: |
