@@ -14,4 +14,4 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run a one-line script
       run: | 
-        git pull https://girishgowda:girigowda1@gitlab.com/dataphion/aitester/frontend.git
+        git pull "https://girishgowda:girigowda1@gitlab.com/dataphion/aitester/frontend.git"
