@@ -18,6 +18,6 @@ jobs:
         privateKey: ${{ secrets.KEY }}
         debug: false
         command: |
-          ls -lah
+          ls -ltr
 
 
