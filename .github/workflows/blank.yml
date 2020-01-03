@@ -14,13 +14,12 @@ jobs:
     - name: Execute SSH commmands on remote server
       uses: girigowda/ci-cd1@master
       with:
-        hosts: 'ubuntu@10.0.0.4'
+        hosts: 'ubuntu@13.232.240.3'
         privateKey: ${{ secrets.KEY }}
         debug: false
         command: |
           ls -ltr
-          
-    - name: path
-      run: pwd
-
+          ssh app
+          pwd
+          ls -ltr
 
