@@ -1,5 +1,9 @@
-FROM ubuntu:18.04
+FROM alpine:latest
 
-ADD entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+RUN apk --update add --no-cache openssh-client coreutils bash
+
+COPY LICENSE README.md /
+
+COPY entrypoint.sh /entrypoint.sh
+
 ENTRYPOINT ["/entrypoint.sh"]
