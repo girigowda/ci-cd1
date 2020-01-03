@@ -14,11 +14,13 @@ jobs:
     - name: executing remote ssh commands using password
       uses: girigowda/ci-cd1@master
       with:
-        command: ls -ltr
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}	
+        script: |
+          whoami
+          ls -ltr
         
 
 
