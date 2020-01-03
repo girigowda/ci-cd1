@@ -18,6 +18,8 @@ jobs:
         pwd
         cd /home/krunal/Music
         git clone "https://girishgowda:girigowda1@gitlab.com/dataphion/aitester/frontend.git"
+        cd /frontend
+        git pull
         ls
         pwd
         
