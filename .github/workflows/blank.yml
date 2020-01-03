@@ -21,5 +21,5 @@ jobs:
           ls -ltr
           ssh app
           pwd
-          ls -ltr
+          ls
 
