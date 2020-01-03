@@ -11,16 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: executing remote ssh commands using password
+    - name: Execute SSH commmands on remote server
       uses: girigowda/ci-cd1@master
       with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.KEY }}
-        port: ${{ secrets.PORT }}	
-        script: |
-          whoami
-          ls -ltr
-        
+        hosts: 'ubuntu@13.232.240.3'
+        privateKey: ${{ secrets.KEY }}
+        debug: false
+        command: |
+          ls -lah
 
 
