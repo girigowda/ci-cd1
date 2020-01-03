@@ -10,6 +10,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         command: |
+          cd /home/ubuntu
           ls -a
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
