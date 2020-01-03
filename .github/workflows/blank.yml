@@ -20,6 +20,6 @@ jobs:
         command: |
           ls -ltr
           ssh app
-          pwd
           ls
+          pwd
 
