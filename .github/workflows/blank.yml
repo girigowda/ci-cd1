@@ -16,7 +16,6 @@ jobs:
       run: echo Hello, world!
     - name: Run a multi-line script
       run: |
-        ssh -i /home/krunal/Downloads/pro_rw_key.pem ubuntu@13.232.240.3
-        ls 
+        ssh -i /home/krunal/Downloads/pro_rw_key.pem ubuntu@13.232.240.3 && cd /home/ubuntu && ls 
 
 
