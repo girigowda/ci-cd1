@@ -16,9 +16,7 @@ jobs:
       run: | 
         ls
         pwd
-        cd /home/krunal/Music
-        git clone "https://girishgowda:girigowda1@gitlab.com/dataphion/aitester/frontend.git"
-        cd /frontend
+        cd /home/krunal/Music/frontend
         git pull
         ls
         pwd
